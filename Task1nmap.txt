@@ -1,0 +1,78 @@
+List of active ip address 
+192.168.1.1
+192.168.1.8
+192.168.1.12
+192.168.1.13
+192.168.1.14
+192.168.1.15
+192.168.1.17
+192.168.1.18
+192.168.1.27
+192.168.1.63
+192.168.1.101
+192.168.1.111
+192.168.1.113
+192.168.1.118
+192.168.1.124
+192.168.1.133
+192.168.1.137
+192.168.1.142
+192.168.1.149
+192.168.1.151
+192.168.1.152
+192.168.1.153
+192.168.1.156
+192.168.1.96
+
+List of open ports
+
+| IP Address        | Open Port(s)   | Service(s)         |
+| ----------------- | -------------- | ------------------ |
+| **192.168.1.1**   | 53/tcp, 80/tcp | domain (DNS), http |
+| **192.168.1.152** | 88/tcp         | kerberos-sec       |
+
+Ports common service and risks
+
+Port 53/tcp – DNS (Domain Name System)
+
+**IP Address:** 192.168.1.1
+**Service:** domain
+
+**Usage:**
+This port is used for DNS services, which are responsible for translating domain names (like google.com) into IP addresses. In this case, it's likely used by the router or a local DNS server (manufacturer appears to be ZTE).
+
+**Possible Risks:**
+
+* If the DNS server allows queries from outside the network, it could be abused in amplification attacks.
+* If zone transfers (AXFR) are not properly secured, attackers might get access to internal domain information.
+* There's also a risk of cache poisoning if DNS responses aren't validated correctly.
+
+
+Port 80/tcp – HTTP (Web Access)
+
+**IP Address:** 192.168.1.1
+**Service:** http
+
+**Usage:**
+This port is commonly used for accessing web-based interfaces, such as the login page of routers or other network devices.
+
+**Possible Risks:**
+
+* Data sent over HTTP is not encrypted, so things like login credentials can be intercepted.
+* If the device uses default or weak login credentials, it's an easy target.
+* Older routers may have outdated or vulnerable web interfaces that can be exploited.
+
+
+Port 88/tcp – Kerberos Authentication
+
+**IP Address:** 192.168.1.152
+**Service:** kerberos-sec
+
+**Usage:**
+Kerberos is typically used in Windows environments, especially in domains where centralized authentication is required. This port usually indicates an authentication server or domain controller.
+
+**Possible Risks:**
+
+* Attackers might try to guess passwords or perform brute-force attacks.
+* If someone gains access to the key distribution server, they might be able to forge authentication tickets.
+* There’s also a chance that domain or user info could be exposed if services are misconfigured.

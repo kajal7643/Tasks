@@ -1,0 +1,336 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Unknown adapter Local Area Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter VMware Network Adapter VMnet1:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::f6c9:994d:8da:fc7e%6
+   IPv4 Address. . . . . . . . . . . : 192.168.184.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter VMware Network Adapter VMnet8:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::93a:800d:f908:f82f%2
+   IPv4 Address. . . . . . . . . . . : 192.168.106.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2401:4900:8813:e51f:90a2:ac47:8549:4da9
+   Temporary IPv6 Address. . . . . . : 2401:4900:8813:e51f:81f7:5fd8:6c2c:fc66
+   Link-local IPv6 Address . . . . . : fe80::cfcd:e32a:59aa:e6d7%19
+   IPv4 Address. . . . . . . . . . . : 192.168.1.96
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::1%19
+                                       192.168.1.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Windows\System32> nmap --version
+Nmap version 7.97 ( https://nmap.org )
+Platform: i686-pc-windows-windows
+Compiled with: nmap-liblua-5.4.7 openssl-3.0.16 nmap-libssh2-1.11.1 nmap-libz-1.3.1 nmap-libpcre2-10.45 Npcap-1.72 nmap-libdnet-1.18.0 ipv6
+Compiled without:
+Available nsock engines: iocp poll select
+
+C:\Windows\System32>nmap -sn 192.168.1.0/24
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 17:18 +0530
+Stats: 0:01:19 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 45.10% done; ETC: 17:20 (0:01:12 remaining)
+Stats: 0:01:20 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 46.67% done; ETC: 17:20 (0:01:09 remaining)
+Nmap scan report for 192.168.1.1 (192.168.1.1)
+Host is up (0.023s latency).
+MAC Address: E8:6E:44:5A:A0:97 (zte)
+Nmap scan report for 192.168.1.8 (192.168.1.8)
+Host is up (0.083s latency).
+MAC Address: D2:D5:58:3B:28:4D (Unknown)
+Nmap scan report for 192.168.1.12 (192.168.1.12)
+Host is up (0.089s latency).
+MAC Address: C2:B2:43:C3:EA:1F (Unknown)
+Nmap scan report for 192.168.1.13 (192.168.1.13)
+Host is up (0.095s latency).
+MAC Address: F6:D9:78:9F:BB:D7 (Unknown)
+Nmap scan report for 192.168.1.14 (192.168.1.14)
+Host is up (0.064s latency).
+MAC Address: 70:9C:D1:1B:30:2D (Intel Corporate)
+Nmap scan report for 192.168.1.15 (192.168.1.15)
+Host is up (0.064s latency).
+MAC Address: DC:F5:05:98:EF:BB (AzureWave Technology)
+Nmap scan report for 192.168.1.18 (192.168.1.18)
+Host is up (0.090s latency).
+MAC Address: 34:02:86:DA:49:A4 (Intel Corporate)
+Nmap scan report for 192.168.1.27 (192.168.1.27)
+Host is up (0.096s latency).
+MAC Address: BE:AC:1B:D7:75:03 (Unknown)
+Nmap scan report for 192.168.1.40 (192.168.1.40)
+Host is up (0.089s latency).
+MAC Address: D6:69:47:A4:A9:5A (Unknown)
+Nmap scan report for 192.168.1.101 (192.168.1.101)
+Host is up (0.089s latency).
+MAC Address: 2A:37:5D:FE:AB:F8 (Unknown)
+Nmap scan report for 192.168.1.111 (192.168.1.111)
+Host is up (0.081s latency).
+MAC Address: 62:4F:B4:6C:C6:E5 (Unknown)
+Nmap scan report for 192.168.1.113 (192.168.1.113)
+Host is up (0.045s latency).
+MAC Address: AE:20:20:58:6C:47 (Unknown)
+Nmap scan report for 192.168.1.116 (192.168.1.116)
+Host is up (0.11s latency).
+MAC Address: E8:5A:8B:74:B2:65 (Xiaomi Communications)
+Nmap scan report for 192.168.1.118 (192.168.1.118)
+Host is up (0.081s latency).
+MAC Address: CC:2F:71:8F:79:79 (Intel Corporate)
+Nmap scan report for 192.168.1.133 (192.168.1.133)
+Host is up (0.046s latency).
+MAC Address: 9C:B7:0D:2C:89:C9 (Liteon Technology)
+Nmap scan report for 192.168.1.137 (192.168.1.137)
+Host is up (0.046s latency).
+MAC Address: 3E:16:B8:17:FF:94 (Unknown)
+Nmap scan report for 192.168.1.139 (192.168.1.139)
+Host is up (0.091s latency).
+MAC Address: 9E:CA:B9:A0:AF:68 (Unknown)
+Nmap scan report for 192.168.1.142 (192.168.1.142)
+Host is up (0.040s latency).
+MAC Address: E2:CB:11:27:71:ED (Unknown)
+Nmap scan report for 192.168.1.149 (192.168.1.149)
+Host is up (0.21s latency).
+MAC Address: DE:5E:DA:62:58:74 (Unknown)
+Nmap scan report for 192.168.1.151 (192.168.1.151)
+Host is up (0.12s latency).
+MAC Address: CA:14:C4:1A:48:96 (Unknown)
+Nmap scan report for 192.168.1.152 (192.168.1.152)
+Host is up (0.11s latency).
+MAC Address: 6E:EA:D5:16:86:B6 (Unknown)
+Nmap scan report for 192.168.1.153 (192.168.1.153)
+Host is up (0.11s latency).
+MAC Address: B4:B5:B6:B1:B3:9D (Chongqing Fugui Electronics)
+Nmap scan report for 192.168.1.156 (192.168.1.156)
+Host is up (0.11s latency).
+MAC Address: EA:93:8C:7E:A0:67 (Unknown)
+Nmap scan report for 192.168.1.96 (192.168.1.96)
+Host is up.
+Nmap done: 256 IP addresses (24 hosts up) scanned in 105.49 seconds
+
+C:\Windows\System32>nmap -p 1-100 192.168.1.0/24
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 17:27 +0530
+Stats: 0:00:36 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 9.02% done; ETC: 17:33 (0:05:33 remaining)
+Nmap scan report for 192.168.1.1 (192.168.1.1)
+Host is up (0.013s latency).
+Not shown: 97 closed tcp ports (reset)
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+53/tcp open     domain
+80/tcp open     http
+MAC Address: E8:6E:44:5A:A0:97 (zte)
+
+Nmap scan report for 192.168.1.8 (192.168.1.8)
+Host is up (0.033s latency).
+All 100 scanned ports on 192.168.1.8 (192.168.1.8) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: D2:D5:58:3B:28:4D (Unknown)
+
+Nmap scan report for 192.168.1.12 (192.168.1.12)
+Host is up (0.056s latency).
+All 100 scanned ports on 192.168.1.12 (192.168.1.12) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: C2:B2:43:C3:EA:1F (Unknown)
+
+Nmap scan report for 192.168.1.13 (192.168.1.13)
+Host is up (0.084s latency).
+All 100 scanned ports on 192.168.1.13 (192.168.1.13) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: F6:D9:78:9F:BB:D7 (Unknown)
+
+Nmap scan report for 192.168.1.14 (192.168.1.14)
+Host is up (0.055s latency).
+All 100 scanned ports on 192.168.1.14 (192.168.1.14) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 70:9C:D1:1B:30:2D (Intel Corporate)
+
+Nmap scan report for 192.168.1.15 (192.168.1.15)
+Host is up (0.091s latency).
+All 100 scanned ports on 192.168.1.15 (192.168.1.15) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: DC:F5:05:98:EF:BB (AzureWave Technology)
+
+Nmap scan report for 192.168.1.17 (192.168.1.17)
+Host is up (0.060s latency).
+All 100 scanned ports on 192.168.1.17 (192.168.1.17) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: E0:0A:F6:41:29:D3 (Liteon Technology)
+
+Nmap scan report for 192.168.1.18 (192.168.1.18)
+Host is up (0.044s latency).
+All 100 scanned ports on 192.168.1.18 (192.168.1.18) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: 34:02:86:DA:49:A4 (Intel Corporate)
+
+Nmap scan report for 192.168.1.27 (192.168.1.27)
+Host is up (0.015s latency).
+All 100 scanned ports on 192.168.1.27 (192.168.1.27) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: BE:AC:1B:D7:75:03 (Unknown)
+
+Nmap scan report for 192.168.1.63 (192.168.1.63)
+Host is up (0.040s latency).
+All 100 scanned ports on 192.168.1.63 (192.168.1.63) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 7E:60:A5:BB:8C:FF (Unknown)
+
+Nmap scan report for 192.168.1.101 (192.168.1.101)
+Host is up (0.027s latency).
+All 100 scanned ports on 192.168.1.101 (192.168.1.101) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 2A:37:5D:FE:AB:F8 (Unknown)
+
+Nmap scan report for 192.168.1.111 (192.168.1.111)
+Host is up (0.053s latency).
+All 100 scanned ports on 192.168.1.111 (192.168.1.111) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 62:4F:B4:6C:C6:E5 (Unknown)
+
+Nmap scan report for 192.168.1.113 (192.168.1.113)
+Host is up (0.084s latency).
+All 100 scanned ports on 192.168.1.113 (192.168.1.113) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: AE:20:20:58:6C:47 (Unknown)
+
+Nmap scan report for 192.168.1.118 (192.168.1.118)
+Host is up (0.069s latency).
+All 100 scanned ports on 192.168.1.118 (192.168.1.118) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: CC:2F:71:8F:79:79 (Intel Corporate)
+
+Nmap scan report for 192.168.1.124 (192.168.1.124)
+Host is up (0.052s latency).
+All 100 scanned ports on 192.168.1.124 (192.168.1.124) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 16:62:FA:59:D3:15 (Unknown)
+
+Nmap scan report for 192.168.1.133 (192.168.1.133)
+Host is up (0.11s latency).
+All 100 scanned ports on 192.168.1.133 (192.168.1.133) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: 9C:B7:0D:2C:89:C9 (Liteon Technology)
+
+Nmap scan report for 192.168.1.137 (192.168.1.137)
+Host is up (0.040s latency).
+All 100 scanned ports on 192.168.1.137 (192.168.1.137) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 3E:16:B8:17:FF:94 (Unknown)
+
+Nmap scan report for 192.168.1.142 (192.168.1.142)
+Host is up (0.051s latency).
+All 100 scanned ports on 192.168.1.142 (192.168.1.142) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: E2:CB:11:27:71:ED (Unknown)
+
+Nmap scan report for 192.168.1.149 (192.168.1.149)
+Host is up (0.039s latency).
+All 100 scanned ports on 192.168.1.149 (192.168.1.149) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: DE:5E:DA:62:58:74 (Unknown)
+
+Nmap scan report for 192.168.1.151 (192.168.1.151)
+Host is up (0.041s latency).
+All 100 scanned ports on 192.168.1.151 (192.168.1.151) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: CA:14:C4:1A:48:96 (Unknown)
+
+Nmap scan report for 192.168.1.152 (192.168.1.152)
+Host is up (0.062s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT   STATE SERVICE
+88/tcp open  kerberos-sec
+MAC Address: 6E:EA:D5:16:86:B6 (Unknown)
+
+Nmap scan report for 192.168.1.153 (192.168.1.153)
+Host is up (0.097s latency).
+All 100 scanned ports on 192.168.1.153 (192.168.1.153) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: B4:B5:B6:B1:B3:9D (Chongqing Fugui Electronics)
+
+Nmap scan report for 192.168.1.156 (192.168.1.156)
+Host is up (0.11s latency).
+All 100 scanned ports on 192.168.1.156 (192.168.1.156) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: EA:93:8C:7E:A0:67 (Unknown)
+
+Nmap scan report for 192.168.1.96 (192.168.1.96)
+Host is up (0.00043s latency).
+All 100 scanned ports on 192.168.1.96 (192.168.1.96) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+
+Nmap done: 256 IP addresses (24 hosts up) scanned in 122.46 seconds
+
+C:\Windows\System32>clear
+'clear' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\System32>nmap -sS 192.168.1.0/24
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 17:42 +0530
+Stats: 0:00:14 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:44 (0:02:12 remaining)
+Stats: 0:00:15 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:45 (0:02:25 remaining)
+Stats: 0:00:15 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:45 (0:02:25 remaining)
+Stats: 0:00:16 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:45 (0:02:38 remaining)
+Stats: 0:00:16 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:45 (0:02:38 remaining)
+Stats: 0:00:17 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:45 (0:02:51 remaining)
+Stats: 0:00:17 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 255 hosts. Timing: About 7.06% done; ETC: 17:45 (0:02:51 remaining)
+Stats: 0:02:53 elapsed; 237 hosts completed (18 up), 18 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.75% done; ETC: 17:49 (0:03:52 remaining)
+Stats: 0:02:53 elapsed; 237 hosts completed (18 up), 18 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.89% done; ETC: 17:49 (0:03:50 remaining)
+
+C:\Windows\System32>ping Task1.com
+
+Pinging Task1.com [3.97.94.250] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 3.97.94.250:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\Windows\System32>ping Task1.com>C:\T1.txt
