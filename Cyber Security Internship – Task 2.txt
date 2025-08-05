@@ -1,0 +1,76 @@
+Cyber Security Internship – Task 2 Report
+
+Objective: 
+Analyze suspicious email samples and identify phishing traits using manual inspection and tools like header analyzers.
+
+Email 1: "Income Tax Refund Processed" 
+From: refunds@incometax-india.gov  
+
+Subject: Income Tax Refund Processed  
+
+Content: Claims a refund of ₹12,380 and asks for bank details through an external link.  
+
+Phishing Indicators:
+Spoofed Email Address: Looks official but uses a domain (.gov) that is invalid for India (should be .gov.in).  
+
+Fake Website Link: http://taxrefund-india.info is not a government domain.  
+
+Urgency and Reward: Mentions a specific refund amount to grab attention.  
+
+Generic Greeting: “Dear Taxpayer” suggests a mass phishing attempt.  
+
+Grammar: Contains slight formatting errors.  
+
+Email 2: "Work From Home – Immediate Hiring"
+From: careers@amaz0n-jobs.com  
+
+Subject: Work From Home – Immediate Hiring  
+
+Content: Offers a remote job at Amazon for ₹50,000 a month with no experience required.  
+
+Phishing Indicators:  
+Misspelled Domain: “amaz0n” uses a zero instead of an “o.”  
+
+Unrealistic Offer: High pay, no experience, and an urgent tone.  
+
+Suspicious URL: http://fakejoboffer.com is a phishing trap.  
+
+Personal Data Request: Requests Aadhaar and CV sent to a Gmail ID, not an official domain.  
+
+No Official Branding: Lacks the recruiter's name, logo, or signature.  
+
+Email 3: "Urgent: Unusual Login Attempt Detected"  
+From: security@yourbank.com  
+
+Subject: Urgent: Unusual Login Attempt  
+
+Content: Claims an unknown device logged in and provides a link to “verify.”  
+
+Phishing Indicators:  
+Generic Bank Name: “Your Bank” is fake or a placeholder.  
+
+Fake Link: http://fake-bank-login.com is clearly not a secure banking URL.  
+
+Fear-Based Language: Uses threats of account suspension.  
+
+No Personalization: Starts with “Dear Customer,” no account details included.  
+
+No Official Design: Missing signature, logo, or contact information.  
+
+Tools & Techniques Used  
+Sample email(Hook security & GitHub)
+Manual inspection of:  
+- Email sender  
+- Grammar  
+- Links (hover to reveal)  
+-Mx Toolbox(email header analyze)
+- EML Analyzer(https://analyzer.sublime.security/?id=019879f6-944c-7bd5-af65-883f0199a8d1)
+Header Info (Partial): No complete header found in .eml files, but domain inconsistencies were identified directly.  
+
+Summary 
+All three emails are phishing attempts based on:  
+- Spoofed or lookalike email domains  
+- Fake or dangerous URLs  
+- Attempts to create urgency or fear  
+- Requests for personal or sensitive data  
+- Poor formatting and lack of personalization  
